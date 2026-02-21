@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
 import { Plus, X, Trash2 } from 'lucide-vue-next'
-import { apiFetch, API_BASE_URL } from '@/services/api'
+import { apiFetch  } from '@/services/api'
 import { useAuth } from '@/composables/useAuth'
 
 const { canManageMovements } = useAuth()

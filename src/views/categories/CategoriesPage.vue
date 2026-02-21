@@ -354,7 +354,7 @@ const deleteCategory = async (category: Category) => {
               >
                 <option :value="null">Aucune</option>
                 <option
-                  v-for="cat in categories.filter((c) => c.id !== editingCategoryId.value)"
+                  v-for="cat in categories.filter((c) => c.id !== editingCategoryId)"
                   :key="cat.id"
                   :value="cat.id"
                 >

@@ -297,10 +297,10 @@ const deleteInventory = async (id: number) => {
   }
 }
 
-const getProductName = (productId: number) => {
-  const product = products.value.find(p => p.id === productId)
-  return product ? `${product.name} (${product.code})` : 'Produit inconnu'
-}
+// const getProductName = (productId: number) => {
+//   const product = products.value.find(p => p.id === productId)
+//   return product ? `${product.name} (${product.code})` : 'Produit inconnu'
+// }
 
 watch(filterStatus, () => {
   loadInventories()
