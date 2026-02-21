@@ -1,10 +1,10 @@
 {
-  "buildCommand": "pnpm build",
+  "buildCommand": "pnpm run build",
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "http://82.25.116.119*"
+      "source": "/api/(.*)",
+      "destination": "http://82.25.116.119"
     },
     {
       "source": "/(.*)",
